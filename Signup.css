@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,600;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background : url("Sdesign1 1.png"),
+                 url("Sdesign2 1.png"),
+                 url("Sdesign3 1.png"),
+                 url("Sdesign4 1.png");
+    background-position: left 0px top -2px,
+                         right 0px top 5px, 
+                         left -20px top 485px, 
+                         right -45px top 480px;
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(6, 40, 99);
+    margin: 0 auto;
+}
+
+.logo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.formBox {
+    border : 1px solid transparent;
+    background-color: #FFFFFF;
+    width: 480px;
+    height: 990px;
+    margin: auto;
+    margin-top: 45px;
+    border-radius: 22px 22px 22px 0px;
+}
+
+#formCaption {
+    text-align: center;
+    color: #083E9E;
+    font-family: 'U8',sans-serif;;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 50px;
+}
+
+#formSubCaption {
+    width: 350px;
+    text-align: center;
+    color: #4a5568;
+    font-size: 16px;
+    font-family: 'karla',sans-serif;
+    margin: auto;
+    margin-top: -10px;
+}
+
+#customerData {
+    margin-top: 40px;
+}
+
+.firstBox {
+    margin-left: 42px;
+}
+
+.otherBox {
+    margin-left: 42px;
+    margin-top: 40px;
+}
+
+#fullName,#email,#phoneNo,#password,#referrer,#customQuestion {
+    margin-top: 8px;
+}
+
+input[type=text],input[type=email],input[type=tel],input[type=password],input,option,datalist {
+    width: 402px;
+    height: 60px;
+    background: rgba(26, 32, 44, 0.1);
+    border-radius: 5px;
+    padding-left: 17px;
+    border: 1px solid transparent;
+}
+
+input[placeholder],select[placeholder] {
+    font-family: 'U8';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 19px;
+    color: black;
+}
+
+label[for=fullName],label[for=email],label[for=phoneNo],label[for=password],label[for=referrer],
+label[for=customQuestion] {
+    font-family: 'U8';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4A5568;
+}
+
+#submitForm {
+    margin-top: 33px; 
+    background: #083E9E;
+    border-radius: 5px 8px 8px 0px;
+    margin-left: 42px;
+    width: 402px;
+    height: 60px;
+    color: #FFFFFF;
+    border: 1px solid transparent;
+    font-family: 'U8';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+#altText {
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+    font-family: Karla;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-decoration: none;
+}
+
+@media screen and (max-width:800px) {
+    body {
+        background-position: left -5% top -20%,
+                        right -7.5% top -1%, 
+                        left -15% bottom -15%, 
+                        right -10% bottom -15%;
+    }
+
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiggyVest Signup</title>
+    <link rel="stylesheet" type="text/css" href="Signup.css">
+    <link rel="icon" type="image/webp" href="apple-icon.webp">
+</head>
+
+<body>
+    <div class="page1">
+    
+        <div class="center-content">
+            <div class="logo">
+                <a href="https://www.piggyvest.com/">
+                    <img src="piggyvest logo.png" alt="PiggyVest Logo">
+                </a>
+            </div>
+
+            <div class="formBox">
+                <h1 id="formCaption">Create a Secure Account</h1>
+                <p id="formSubCaption">Welcome to the future of Savings & Investments</p>
+                
+                <form action="action_page.php" id="customerData">
+                    <div class="firstBox">
+                        <label for="fullName">Full Name</label><br/>
+                        <input type="text" id="fullName" name="fullname" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="otherBox">
+                        <label for="email">Email Address</label><br/>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="otherBox">
+                        <label for="phoneNo">Phone Number</label><br/>
+                        <input type="tel" id="phoneNo" name="phoneNumber" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}" required>
+                    </div>
+
+                    <div class="otherBox">
+                        <label for="password">Password</label><br/>
+                        <input type="password" id="password" name="password" placeholder="Password" maxlength="15" required>
+                    </div>
+
+                    <div class="otherBox">
+                        <label for="referrer">Referrer Phone or Promo Code (Optional)</label><br/>
+                        <input type="text" id="referrer" name="referrer-code" pattern="[0-9]{5}" placeholder="Referrer Phone or Code">
+                    </div>
+
+                    <div class="otherBox">
+                        <label for="customQuestion">How Did You Hear About Us? (Optional)</label><br/>
+                        <input list="customQuestion" name="Ads-medium" placeholder="Click To Select">
+                        <datalist id="customQuestion">
+                            <option value="Click To Select" disabled>
+                            <option value="Facebook">
+                            <option value="Twitter">
+                            <option value="Instagram">
+                            <option value="Family/Friend/Coworker Referral">
+                            <option value="Google Search">
+                            <option value="Google Playstore">
+                            <option value="Online Blog">
+                            <option value="Local Newspaper">
+                            <option value="At an event">
+                            <option value="Other">
+                        </datalist>
+                    </div>
+
+                    <input type="submit" value="CREATE ACCOUNT" id="submitForm" onClick="checkForm" />
+
+                </form>
+            </div>
+
+            <a href="https://dashboard.piggyvest.com/login" id="altText"><p>Already have an account? Log in</p></a>
+        </div>
+
+
+    </div>
+</body>
+
+
+</html>
