@@ -62,9 +62,27 @@ body {
     margin-left: 42px;
 }
 
-.otherBox {
+.input-control {
     margin-left: 42px;
     margin-top: 40px;
+}
+
+.input-control input:focus {
+    outline: 0
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 15px;
+    height: 13px;
 }
 
 #fullName,#email,#phoneNo,#password,#referrer,#customQuestion {
@@ -89,7 +107,7 @@ input[placeholder],select[placeholder] {
     color: black;
 }
 
-label[for=fullName],label[for=email],label[for=phoneNo],label[for=password],label[for=referrer],
+label[for=username],label[for=email],label[for=phoneNo],label[for=password],label[for=referrer],
 label[for=customQuestion] {
     font-family: 'U8';
     font-style: normal;
@@ -99,7 +117,7 @@ label[for=customQuestion] {
     color: #4A5568;
 }
 
-#submitForm {
+button {
     margin-top: 33px; 
     background: #083E9E;
     border-radius: 5px 8px 8px 0px;
